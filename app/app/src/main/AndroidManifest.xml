@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://android.com">
+<manifest xmlns:android="http://android.com"
+    package="com.example.floatingapp">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
@@ -7,7 +8,8 @@
         android:label="Floating Test App"
         android:theme="@android:style/Theme.DeviceDefault">
         
-        <activity android:name=".MainActivity"
+        <activity 
+            android:name="com.example.floatingapp.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +18,7 @@
         </activity>
 
         <service
-            android:name=".FloatingService"
+            android:name="com.example.floatingapp.FloatingService"
             android:exported="false" />
     </application>
 </manifest>
